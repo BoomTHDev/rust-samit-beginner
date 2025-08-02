@@ -1,7 +1,5 @@
-[package]
-name = "rust-samit-beginner"
-version = "0.1.0"
-edition = "2024"
-default-run = "rust-samit-beginner"
-
-[dependencies]
+[workspace]
+members = [
+  "section_01_basics/ch_01_hello_world",
+  "section_01_basics/ch_02_types_variables",
+]
