@@ -1,5 +1,7 @@
 [workspace]
+default-members = ["section_01_basics/ch_01_hello_world"]
 members = [
   "section_01_basics/ch_01_hello_world",
   "section_01_basics/ch_02_types_variables",
 ]
+resolver = "2"
