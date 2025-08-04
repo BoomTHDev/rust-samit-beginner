@@ -1,5 +1,5 @@
 [workspace]
-default-members = ["section_01_basics/ch_01_hello_world"]
+default-members = ["section_01_basics/ch_02_types_variables"]
 members = [
   "section_01_basics/ch_01_hello_world",
   "section_01_basics/ch_02_types_variables",
