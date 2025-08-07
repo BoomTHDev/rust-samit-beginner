@@ -17,3 +17,7 @@ version = "0.1.0"
 [[package]]
 name = "ch_04_modules"
 version = "0.1.0"
+
+[[package]]
+name = "exercise_module"
+version = "0.1.0"
