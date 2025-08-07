@@ -48,4 +48,86 @@ fn main() {
     // Character type string
     let greeting: String = "Hello, world!".to_string();
     println!("Greeting: {}", greeting);
+
+    println!("-------------------------");
+
+    let x = 5;
+    println!("The value of x is: {}", x);
+
+    println!("-------------------------");
+
+    let name = "Alice";
+    let age = 30;
+    println!("My name is {} and I am {} years old.", name, age);
+
+    println!("-------------------------");
+
+    let immutable_var = 10;
+    println!("Immutable variable value: {}", immutable_var);
+
+    let mut mutable_var = 15;
+    println!("Original value: {}", mutable_var);
+    mutable_var = 25;
+    mutable_var += 5;
+    println!("Mutable variable value: {}", mutable_var);
+
+    println!("-------------------------");
+
+    const MAX_POINTS: u32 = 100_000;
+    const MIN_POINTS: u32 = 0;
+    println!("The maximum points are: {}", MAX_POINTS);
+    println!("The minimum points are: {}", MIN_POINTS);
+
+    println!("-------------------------");
+
+    let x = 5;
+    println!("The value of x is: {}", x);
+    let x = "Hello";
+    println!("The value of x is now: {}", x);
+
+    println!("-------------------------");
+
+    let outer_var = "I'm outside";
+    {
+        let inner_var = "I'm inside";
+        println!("{}", outer_var);
+        println!("{}", inner_var);
+    }
+
+    println!("{}", outer_var);
+
+    println!("-------------------------");
+
+    let distance: Kilometers = 42;
+    println!("Distance in kilometers: {}", distance);
+
+    println!("-------------------------");
+
+    match divide(10.0, 2.0) {
+        Ok(result) => println!("Result: {:.1}", result),
+        Err(error) => println!("Error: {}", error),
+    }
+
+    match divide(10.0, 0.0) {
+        Ok(result) => println!("Result: {:.1}", result),
+        Err(error) => println!("Error: {}", error),
+    }
+}
+
+// Type Aliases
+type Kilometers = i32;
+
+#[allow(dead_code)]
+#[allow(unused_variables)]
+fn unused_function() {
+    let unused_var = 42;
+    println!("This function is not used, but Rust won't complain.");
+}
+
+fn divide(num1: f64, num2: f64) -> Result<f64, &'static str> {
+    if num2 == 0.0 {
+        Err("Cannot divide by zero!")
+    } else {
+        Ok(num1 / num2)
+    }
 }
