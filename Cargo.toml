@@ -1,5 +1,5 @@
 [workspace]
-default-members = ["section_02_control_onwership/exercise"]
+default-members = ["section_02_control_onwership/ch_05_onwership_borrowing"]
 members = [
   "section_01_basics/ch_01_hello_world",
   "section_01_basics/ch_02_types_variables",
@@ -9,6 +9,8 @@ members = [
   "section_02_control_onwership/ch_01_ifelse_condition",
   "section_02_control_onwership/ch_02_match_condition",
   "section_02_control_onwership/ch_03_loop_condition",
+  "section_02_control_onwership/ch_04_stack_heap",
+  "section_02_control_onwership/ch_05_onwership_borrowing",
   "section_02_control_onwership/exercise",
 ]
 resolver = "2"
