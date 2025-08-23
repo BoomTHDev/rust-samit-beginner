@@ -19,6 +19,10 @@ name = "ch_02_match_condition"
 version = "0.1.0"
 
 [[package]]
+name = "ch_02_string"
+version = "0.1.0"
+
+[[package]]
 name = "ch_02_types_variables"
 version = "0.1.0"
 
