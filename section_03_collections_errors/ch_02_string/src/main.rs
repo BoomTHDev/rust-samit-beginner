@@ -24,3 +24,5 @@ fn main() {
     let words: Vec<&str> = "Rust is a safe language".split(' ').collect();
     println!("all words: {:?}", words);
 }
+
+// for day 5
