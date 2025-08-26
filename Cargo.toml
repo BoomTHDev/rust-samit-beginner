@@ -1,5 +1,5 @@
 [workspace]
-default-members = ["section_03_collections_errors/ch_02_string"]
+default-members = ["section_03_collections_errors/ch_03_hashmap"]
 members = [
     "section_01_basics/ch_01_hello_world",
     "section_01_basics/ch_02_types_variables",
@@ -15,5 +15,6 @@ members = [
     "section_02_control_onwership/exercise",
     "section_03_collections_errors/ch_01_vector",
     "section_03_collections_errors/ch_02_string",
+    "section_03_collections_errors/ch_03_hashmap",
 ]
 resolver = "2"
