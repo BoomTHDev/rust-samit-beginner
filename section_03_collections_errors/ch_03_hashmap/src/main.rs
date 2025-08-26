@@ -28,4 +28,23 @@ fn main() {
     for (team, score) in &scores {
         println!("{}, Score: {}", team, score);
     }
+
+    println!("----------------------------------------------");
+
+    // Closure
+    let add = |a: i32, b: i32| -> i32 { a + b };
+    println!("{}", add(10, 20));
+
+    const BONUS_POINTS: i32 = 10;
+    let mut scores = HashMap::new();
+    scores.insert("Team A", 95);
+
+    scores.entry("Team A").and_modify(|score| {
+        *score += BONUS_POINTS;
+    });
+
+    match scores.get("Team A") {
+        Some(score) => println!("My new score of Team A is: {:?}", score),
+        None => println!("Not found Team A"),
+    }
 }
